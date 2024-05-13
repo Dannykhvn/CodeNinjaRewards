@@ -1,0 +1,148 @@
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.star-icon {
+  width: 6.875rem; 
+  height: auto;
+}
+
+.star-count {
+  font-size: 1.5em; 
+  font-weight: bold;
+}
+
+.star-box {
+  display: flex;
+  align-items: center;
+}
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.25rem; 
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1200px; 
+  margin: 1.25rem auto; 
+}
+
+.upper-forms-container {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  margin-bottom: 1.25rem; 
+}
+
+.lower-forms-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-form, .nfc-form {
+  flex: 1; 
+  background: #fff;
+  padding: 0.9375rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 0.625rem; 
+}
+
+.profile-form:last-child, .nfc-form:last-child {
+  margin-right: 0;
+}
+
+.student-info-section, .nfc-management {
+  flex: 1; 
+  background: #fff;
+  padding: 0.9375rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 0.625rem;
+}
+
+.profile-form:hover, .nfc-form:hover {
+  transform: translateY(-0.1875rem); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  margin-bottom: 0.9375rem; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3125rem; 
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"], 
+.textarea-reason {
+  width: 100%; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem; 
+  background-color: #f8f8f8;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.625rem; 
+  border: none;
+  border-radius: 0.25rem; 
+  background-color: #6f73e3;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9375rem; 
+  margin-top: 0.3125rem; 
+}
+
+.submit-button:hover, .nfc-submit-button:hover {
+  background-color: #5a60b7;
+}
+
+@media (max-width: 48rem) { 
+  .upper-forms-container, .lower-forms-container {
+    flex-direction: column;
+  }
+
+  .profile-form, .nfc-form, .student-info-section, .nfc-management {
+    margin: 0 0 0.625rem 0; 
+    width: 100%; 
+  }
+
+  .profile-form:last-child, .nfc-form:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.textarea-reason {
+  width: 97%; 
+  height: 10rem; 
+  resize: none; 
+}
+
+.ninja-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 1.25rem; 
+}
+
+.ninja-image-container img {
+  max-width: 40%; 
+  height: auto; 
+}
+
+.ninjaImg {
+  animation: float 4s ease-in-out infinite;
+}

@@ -1,0 +1,26 @@
+.input-block {
+    background: #ffffff10; 
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px; 
+    margin-bottom: 25px;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .input-block:focus {
+    outline: none;
+    border-color: #6422b5;
+    background: #ffffff20; 
+  }
+  
+  .input-label {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+
+  

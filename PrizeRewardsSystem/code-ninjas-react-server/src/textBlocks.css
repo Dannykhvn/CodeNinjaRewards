@@ -1,0 +1,17 @@
+.text-block {
+    width: calc(100% - 20px);
+    padding: 12px; 
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px; 
+    transition: border-color 0.3s ease;
+    height: auto; 
+    resize: vertical; 
+  }
+  
+  .text-block:focus {
+    outline: none;
+    border-color: #6422b5;
+  }

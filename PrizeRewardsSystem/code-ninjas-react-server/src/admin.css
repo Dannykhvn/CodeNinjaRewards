@@ -1,0 +1,109 @@
+.login-panel {
+  padding: 2.5rem; 
+  border-radius: 1.25rem; 
+  background: #ffffff;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 37.5rem; 
+  margin: auto;
+}
+
+.logo-container {
+  margin-bottom: 1.25rem; 
+  text-align: center;
+}
+
+.logo {
+  width: 80%;
+  max-width: 24.375rem; 
+  height: auto;
+  margin: auto;
+}
+
+.login-title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.875rem; 
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem; 
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem; 
+  color: #333;
+  font-size: 1rem;
+}
+
+.link-style-button {
+  background: none;
+  color: #6422b5;
+  border: none;
+  padding-top: 0.625rem; 
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-top: 1.875rem; 
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+
+input[type="email"],
+input[type="otp"],
+input[type="username"],
+input[type="password"] {
+  width: 95.5%; 
+  padding: 0.75rem; 
+  border: 1px solid #ccc;
+  border-radius: 0.625rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem; 
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #6422b5;
+  box-shadow: 0 0 8px #6422b5;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem; 
+  margin-top: 0.625rem; 
+  border: none;
+  border-radius: 0.625rem; 
+  background-color: #6f73e3;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem; 
+}
+
+.login-button:hover {
+  background-color: #5a60b7;
+}
+
+@media (max-width: 48rem) { 
+  .login-panel {
+    padding: 1.25rem; 
+  }
+
+  .login-title, .form-group label, input[type="email"], input[type="password"], .login-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 30rem) { 
+  .login-panel {
+    padding: 0.9375rem; 
+  }
+
+  .login-title, .form-group label, input[type="email"], input[type="password"], .login-button {
+    font-size: 0.8rem; 
+  }
+}

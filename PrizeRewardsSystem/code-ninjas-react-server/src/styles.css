@@ -1,0 +1,147 @@
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+
+.waviy {
+  position: relative;
+  display: inline-block;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 3.4375vw;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 4s infinite;
+  animation-delay: calc(.03s * var(--i));
+}
+
+@font-face {
+  font-family: 'AzoSansTest-Black';
+  src: url('../fonts/Test-AzoCollection/Test-AzoSans/AzoSansTest-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'AzoSansTest-Black', sans-serif;
+}
+
+.custom-font {
+  font-family: 'AzoSansTest-Black', sans-serif; 
+  font-size: 6rem;
+  margin: 0.625rem 0;
+  color: white;
+}
+
+.custom-font-admin {
+  display: block;
+  font-family: 'AzoSansTest-Black', sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-align: left; 
+  margin-left: 5rem; 
+  width: fit-content;
+  z-index: 100;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: #090d00;
+  z-index: 0;
+}
+
+.admin-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 70vw; 
+  height: 100vh;
+  background: rgba(226, 8, 255, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.admin-container h1 {
+  text-align: left;
+  margin: 20px; 
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+  z-index: 10;
+  display: inline-block;
+}
+
+.bottom-right-image {
+  position: fixed;
+  bottom: 0;
+  right: -2.4375vw; 
+  width: 50vw;
+  height: auto;
+  z-index: 20;
+}
+
+.ninja-image {
+  position: fixed;
+  top: 2.5vh; 
+  left: 2.5vw;
+  z-index: 30; 
+  height: 60vh;
+  width: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.invisible-text-box {
+  position: absolute;
+  z-index: -1;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="username"],
+input[type="otp"],
+input[type="password"],
+textarea {
+  font-size: 1.2rem;
+  font-family: 'AzoSansTest-Black', sans-serif;
+}
+
+
+@media (max-width: 1300px) {
+  .custom-font-admin {
+    display: none;
+  }
+
+  .admin-container {
+    width: 100vw; 
+    position: static; 
+  }
+}
+
